@@ -11,24 +11,33 @@
     "react-scripts": "3.4.3"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "format": "prettier src\"src/**/*.{js,html}\" --write",
+    "build:css": "postcss src/tailwind.css -o src/index.css",
+    "watch:css": "postcss src/tailwind.css -o src/index.css --watch",
+    "env:dev": "cross-env NODE_ENV=development",
+    "env:prod": "cross-env NODE_ENV=production",
+    "react-scripts:start": "react-scripts start",
+    "react-scripts:build": "react-scripts build",
+    "start": "cross-env NODE_ENV=development run-p watch:css react-scripts:start",
+    "build": "cross-env NODE_ENV=production run-s build:css react-scripts:build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
   "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^3.0.0",
+    "cross-env": "^7.0.2",
+    "cssnano": "^4.1.10",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^8.1.0",
+    "prettier": "^2.1.2",
+    "purgecss": "^3.0.0",
+    "tailwindcss": "^1.9.1"
   }
 }
