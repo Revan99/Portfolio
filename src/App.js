@@ -1,9 +1,10 @@
 import React from "react";
+import Home from "./sections/Home";
 
 function App() {
   return (
-    <div className=''>
-      <h1>hello world</h1> <h2>sdasdsada</h2>
+    <div >
+      <Home/>
     </div>
   );
 }
