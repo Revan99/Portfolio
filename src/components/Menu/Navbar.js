@@ -21,7 +21,7 @@ const Navbar = () => {
   return (
     <Nav
       id="navbar"
-      className=" fixed   bg-secondaryLight z-50  w-full py-0 px-5 flex justify-between"
+      className=" fixed   bg-secondaryLight z-50 h-16 w-full py-0 px-5 flex justify-between"
     >
       <div className="logo ">Nav Bar</div>
       <Burger />

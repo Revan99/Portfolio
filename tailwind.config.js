@@ -39,6 +39,7 @@ module.exports = {
         120: "120vh",
         "1/2": "50%",
         41.75: "41.75rem",
+        fitContent: "fit-content",
       },
       width: {
         "300p": "300px",

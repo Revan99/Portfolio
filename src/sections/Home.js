@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import myImageLight from "./../images/lightmode/revan.png";
-import myImageDark from "./../images/darkmode/revan.png";
+import myImageLight from "./../Images/lightmode/revan.png";
+import myImageDark from "./../Images/darkmode/revan.png";
 import PersonalInfo from "./../personalInfo/PersonalInfo.json";
 
 export default function Home() {
@@ -14,16 +14,14 @@ export default function Home() {
       `}
     >
       <div
-        className={`h-5 bg-primaryLight w-10 rounded-full flex absolute mt-20 mr-20 top-0 right-0 ${
-          them ? "justify-start" : "justify-end"
-        }`}
+        className={`h-5 bg-primaryLight w-10 rounded-full flex absolute mt-20 mr-20 top-0 right-0  `}
         onClick={() => {
           setThem((pThem) => !pThem);
         }}
       >
         <div
-          className={`h-5 w-5 rounded-full ${
-            them ? " bg-4thColorLight" : "bg-4thColorDark"
+          className={`h-5 w-5 rounded-full transition-all duration-100 ${
+            them ? " bg-4thColorLight ml-0" : "bg-4thColorDark ml-auto"
           }`}
         ></div>
       </div>
@@ -50,7 +48,6 @@ export default function Home() {
           Hire me
         </button>
       </div>
-
       <div className={`flex justify-center  min-h-16`}>
         <img src={them ? myImageLight : myImageDark} alt="my" className="" />
       </div>
