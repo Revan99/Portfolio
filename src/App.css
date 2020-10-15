@@ -1,3 +1,7 @@
 body {
-  font-family: Poppins, sans-serif;
+  font-family: "Poppins", sans-serif;
+  height: 200vh;
+}
+.navbar {
+  border-bottom: 2px solid #f1f1f1;
 }

@@ -7,8 +7,8 @@ module.exports = {
         secondaryLight: "#FBFBFC", // an example of extending tailwind
         tertiaryLight: "#F3F3F4",
         "4thColorLight": "#32333C",
-        "5thColorLight": "#32333C",
-        "6thColorLight": "#F3F3F4",
+        "5thColorLight": "#666684",
+        "6thColorLight": "#929497",
         "7thColorLight": "#FFFFFF",
 
         primaryDark: "#F4B500",
