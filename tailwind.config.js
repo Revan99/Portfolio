@@ -3,8 +3,21 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        lightblue: "#18A0FB", // an example of extending tailwind
-        darkgray: "#1D2530",
+        primaryLight: "#F4B500",
+        secondaryLight: "#FBFBFC", // an example of extending tailwind
+        tertiaryLight: "#F3F3F4",
+        "4thColorLight": "#32333C",
+        "5thColorLight": "#32333C",
+        "6thColorLight": "#F3F3F4",
+        "7thColorLight": "#FFFFFF",
+
+        primaryDark: "#F4B500",
+        secondaryDark: "#303131", // an example of extending tailwind
+        tertiaryDark: "#2B2C2C",
+        "4thColorDark": "#FFFFFF",
+        "5thColorDark": "#CCCCCC",
+        "6thColorDark": "#363737",
+        "7thColorDark": "#727B86",
       },
       borderRadius: {
         20: "20px",
