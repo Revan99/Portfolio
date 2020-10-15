@@ -37,6 +37,8 @@ module.exports = {
       },
       height: {
         120: "120vh",
+        "1/2": "50%",
+        41.75: "41.75rem",
       },
       width: {
         "300p": "300px",
@@ -62,6 +64,8 @@ module.exports = {
       inset: {
         "10%": "10%",
         "60vh": "60vh",
+        5: "5rem",
+        3: "3rem",
       },
       screens: {
         x910: { max: "910px" },
