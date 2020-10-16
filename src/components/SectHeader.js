@@ -12,7 +12,7 @@ const SectHeader = ({ sectionName }) => {
   return (
     <AboutSecHeader
       AboutSecHeader
-      className="cursor-pointer mb-5 mx-auto flex flex-col items-center "
+      className="cursor-pointer   mb-12 mx-auto flex flex-col items-center "
     >
       <h1 className=" text-5xl inline-block mr-auto  text-4thColorLight   font-extrabold">
         {sectionName}

@@ -1,4 +1,11 @@
 {
-    "name":"Revan",
-    "jobTitle":"front-end web developer"
+  "name": "Revan",
+  "jobTitle": "front-end web developer",
+  "email": "Hewr_s@outlook.com",
+  "PhoneNo": "0750-861-4371",
+  "location": "Ashty City - Erbil",
+  "github": "https://github.com/Hewr-Srood",
+  "linkedin": "https://www.linkedin.com/in/hewr-srood/",
+  "facebook": "https://www.facebook.com/hewr.dev.9",
+  "instagram": "https://instagram.com/hewrdev/"
 }

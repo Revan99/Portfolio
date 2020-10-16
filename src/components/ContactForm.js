@@ -1,9 +1,13 @@
 import React from "react";
 
-const AboutForm = () => {
+const ContactForm = () => {
   return (
-    <div className=" sm:w-full md:w-4/12">
-      <form className="flex flex-col ">
+    <div className=" sm:w-full md:w-4/12 sm">
+      <h2 className=" text-4xl mb-5 font-extrabold text-4thColorLight   ">
+        {" "}
+        Send message
+      </h2>
+      <form className="flex flex-col justify-evenly">
         <label
           htmlFor="name"
           className="text-2xl mb-2 font-extrabold text-5thColorLight"
@@ -41,7 +45,7 @@ const AboutForm = () => {
           rows="5"
           className="ml-3 mb-5"
         />
-        <button className="rounded border-4  font-bold border-primaryLights  border-primaryLight transition-all duration-150  w-40  text-white bg-primaryLight py-3 hover:bg-transparent hover:text-4thColorLight">
+        <button className="rounded border-4  font-bold border-primaryLights  border-primaryLight transition-all duration-150  w-40  text-white bg-primaryLight py-3 hover:bg-transparent hover:text-primaryLight">
           Send message
         </button>
       </form>
@@ -49,4 +53,4 @@ const AboutForm = () => {
   );
 };
 
-export default AboutForm;
+export default ContactForm;

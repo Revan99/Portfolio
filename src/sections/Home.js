@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import myImageLight from "./../images/lightmode/revan.png";
-import myImageDark from "./../images/darkmode/revan1.png";
+import myImageLight from "./../Images/lightmode/revan.png";
+import myImageDark from "./../Images/darkmode/revan1.png";
 import PersonalInfo from "./../personalInfo/PersonalInfo.json";
 
 export default function Home() {
-  console.log(PersonalInfo);
   const [them, setThem] = useState(() => true);
 
   return (

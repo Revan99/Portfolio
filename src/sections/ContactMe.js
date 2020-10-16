@@ -1,9 +1,9 @@
 import React from "react";
 import SectHeader from "../components/SectHeader";
 import ContactInfo from "../components/ContactInfo";
-import AboutFrom from "../components/AboutForm";
+import ContactForm from "../components/ContactForm";
 
-const Aboutme = () => {
+const ContactMe = () => {
   return (
     <div className="relative">
       <div className=" top-0 w-full  pt-12 min-h-screen h-fitContent flex items-center mt-20 mb-2 flex-col  absolute    bg-tertiaryLight justify-evenly">
@@ -12,11 +12,11 @@ const Aboutme = () => {
         <div className="flex justify-around flex-wrap w-full">
           <ContactInfo />
 
-          <AboutFrom />
+          <ContactForm />
         </div>
       </div>
     </div>
   );
 };
 
-export default Aboutme;
+export default ContactMe;
