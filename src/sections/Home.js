@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import myImageLight from "./../images/lightmode/revan.png";
 import myImageDark from "./../images/darkmode/revan1.png";
 import PersonalInfo from "./../personalInfo/PersonalInfo.json";
