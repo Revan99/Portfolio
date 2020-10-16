@@ -1,13 +1,18 @@
 import React, { useState } from "react";
+import Navbar from "./components/Menu/Navbar";
+import ContactMe from "./sections/ContactMe";
 import Home from "./sections/Home";
-// import Skills from "./sections/Skills";
+import Skills from "./sections/Skills";
 
+import "./App.css";
 function App() {
   const [them, setThem] = useState(() => true);
   return (
-    <div>
+    <div className="App">
+      <Navbar />
       <Home them={them} setThem={setThem} />
-      {/* <Skills them={them} /> */}
+      <Skills them={them} />
+      <ContactMe />
     </div>
   );
 }

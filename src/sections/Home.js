@@ -1,6 +1,4 @@
 import React from "react";
-import myImageLight from "./../images/lightmode/revan.png";
-import myImageDark from "./../images/darkmode/revan1.png";
 import PersonalInfo from "./../personalInfo/PersonalInfo.json";
 
 export default function Home({ them, setThem }) {
@@ -52,7 +50,15 @@ export default function Home({ them, setThem }) {
       <div
         className={`flex justify-center transition-all duration-150 min-h-16`}
       >
-        <img src={them ? myImageLight : myImageDark} alt="my" className="" />
+        <img
+          src={
+            them
+              ? "./../images/lightmode/revan.png"
+              : "images/darkmode/revan1.png"
+          }
+          alt="my"
+          className=""
+        />
       </div>
     </div>
   );

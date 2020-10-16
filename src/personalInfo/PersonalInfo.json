@@ -4,33 +4,40 @@
     "skills":[
         {
             "name":"Java Script",
-            "logo":"",
+            "logo":"/images/logos/JsLogo.png",
             "knowledge":70
         },
         {
             "name":"HTML5",
-            "logo":"",
+            "logo":"./../images/logos/HTMLLogo.png",
             "knowledge":75
         },
         {
             "name":"CSS",
-            "logo":"",
+            "logo":"./../images/logos/CSSLogo.png",
             "knowledge":50
         },
         {
             "name":"React",
-            "logo":"",
+            "logo":"./../images/logos/ReactLogo.png",
             "knowledge":55
         },
         {
             "name":"Java",
-            "logo":"",
+            "logo":"./../images/logos/JavaLogo.png",
             "knowledge":65
         },
         {
             "name":"C++",
-            "logo":"",
+            "logo":"./../images/logos/C++Logo.png",
             "knowledge":70
         }
-    ]
+    ],
+  "email": "Hewr_s@outlook.com",
+  "PhoneNo": "0750-861-4371",
+  "location": "Ashty City - Erbil",
+  "github": "https://github.com/Hewr-Srood",
+  "linkedin": "https://www.linkedin.com/in/hewr-srood/",
+  "facebook": "https://www.facebook.com/hewr.dev.9",
+  "instagram": "https://instagram.com/hewrdev/"
 }
