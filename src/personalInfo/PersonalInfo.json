@@ -1,4 +1,36 @@
 {
     "name":"Revan",
-    "jobTitle":"front-end web developer"
+    "jobTitle":"front-end web developer",
+    "skills":[
+        {
+            "name":"Java Script",
+            "logo":"",
+            "knowledge":70
+        },
+        {
+            "name":"HTML5",
+            "logo":"",
+            "knowledge":75
+        },
+        {
+            "name":"CSS",
+            "logo":"",
+            "knowledge":50
+        },
+        {
+            "name":"React",
+            "logo":"",
+            "knowledge":55
+        },
+        {
+            "name":"Java",
+            "logo":"",
+            "knowledge":65
+        },
+        {
+            "name":"C++",
+            "logo":"",
+            "knowledge":70
+        }
+    ]
 }

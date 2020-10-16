@@ -3,10 +3,7 @@ import myImageLight from "./../images/lightmode/revan.png";
 import myImageDark from "./../images/darkmode/revan1.png";
 import PersonalInfo from "./../personalInfo/PersonalInfo.json";
 
-export default function Home() {
-  console.log(PersonalInfo);
-  const [them, setThem] = useState(() => true);
-
+export default function Home({ them, setThem }) {
   return (
     <div
       className={`flex flex-col sm:flex-row items-center justify-between h-screen  xl:justify-around transition-all duration-150  ${
