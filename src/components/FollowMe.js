@@ -8,7 +8,7 @@ const FollowMe = () => {
       <h3 className=" text-xl font-extrabold mt-5  text-6thColorLight">
         Follow me
       </h3>
-      <div className="flex mt-3 justify-between">
+      <div className="flex mt-3 sm:justify-between justify-evenly">
         <a target="_blank" rel="noopener noreferrer" href={PersonalInfo.github}>
           <FaGithub
             className=" text-5thColorLight hover:text-gray-900 transition-all    duration-150 transform  hover:rotate-12"

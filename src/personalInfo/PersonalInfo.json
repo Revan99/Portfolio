@@ -1,5 +1,42 @@
 {
-  "name": "Hewr Srood",
+  "projects": [
+    {
+      "pName": "Cinemagic",
+      "pDemoUrl": "https://cinemagic.netlify.app/",
+      "pGithubUrl": "https://github.com/Hewr-Srood/cinemagic",
+      "pDesciption": "A website to show you trending movies and give you the detail of a spesific movie that you want ",
+      "techs": ["React js", "Bootstrap", "bla bla bla"]
+    },
+    {
+      "pName": "Cinemagic",
+      "pDemoUrl": "https://cinemagic.netlify.app/",
+      "pGithubUrl": "https://github.com/Hewr-Srood/cinemagic",
+      "pDesciption": "A website to show you trending movies and give you the detail of a spesific movie that you want ",
+      "techs": ["React js", "Bootstrap", "bla bla bla"]
+    },
+    {
+      "pName": "Cinemagic",
+      "pDemoUrl": "https://cinemagic.netlify.app/",
+      "pGithubUrl": "https://github.com/Hewr-Srood/cinemagic",
+      "pDesciption": "A website to show you trending movies and give you the detail of a spesific movie that you want ",
+      "techs": ["React js", "Bootstrap", "bla bla bla"]
+    },
+    {
+      "pName": "Cinemagic",
+      "pDemoUrl": "https://cinemagic.netlify.app/",
+      "pGithubUrl": "https://github.com/Hewr-Srood/cinemagic",
+      "pDesciption": "A website to show you trending movies and give you the detail of a spesific movie that you want ",
+      "techs": ["React js", "Bootstrap", "bla bla bla"]
+    },
+    {
+      "pName": "Cinemagic",
+      "pDemoUrl": "https://cinemagic.netlify.app/",
+      "pGithubUrl": "https://github.com/Hewr-Srood/cinemagic",
+      "pDesciption": "A website to show you trending movies and give you the detail of a spesific movie that you want ",
+      "techs": ["React js", "Bootstrap", "bla bla bla"]
+    }
+  ],
+  "name": "Hewr",
   "jobTitle": "front-end web developer",
   "email": "Hewr_s@outlook.com",
   "PhoneNo": "0750-861-4371",
