@@ -1,16 +1,22 @@
 import React from "react";
 
-const ContactForm = () => {
+const ContactForm = ({ them }) => {
   return (
     <div className=" sm:w-full md:w-4/12 sm">
-      <h2 className=" text-4xl mb-5 font-extrabold text-4thColorLight   ">
+      <h2
+        className={` text-4xl font-extrabold ${
+          them ? "text-4thColorLight" : "text-5thColorDark"
+        } `}
+      >
         {" "}
-        Send message
+        Contact info
       </h2>
       <form className="flex flex-col justify-evenly">
         <label
           htmlFor="name"
-          className="text-2xl mb-2 font-extrabold text-5thColorLight"
+          className={`text-2xl mb-2 font-extrabold ${
+            them ? "text-5thColorLight" : "text-5thColorDark"
+          }`}
         >
           Name
         </label>
@@ -22,7 +28,9 @@ const ContactForm = () => {
         />
         <label
           htmlFor="email "
-          className="text-2xl mb-2 font-extrabold text-5thColorLight"
+          className={`text-2xl mb-2 font-extrabold ${
+            them ? "text-5thColorLight" : "text-5thColorDark"
+          }`}
         >
           Email
         </label>
@@ -34,7 +42,9 @@ const ContactForm = () => {
         />
         <label
           htmlFor="message"
-          className="text-2xl mb-2 font-extrabold text-5thColorLight"
+          className={`text-2xl mb-2 font-extrabold ${
+            them ? "text-5thColorLight" : "text-5thColorDark"
+          }`}
         >
           Message
         </label>

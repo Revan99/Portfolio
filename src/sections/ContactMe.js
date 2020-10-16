@@ -3,16 +3,20 @@ import SectHeader from "../components/SectHeader";
 import ContactInfo from "../components/ContactInfo";
 import ContactForm from "../components/ContactForm";
 
-const ContactMe = () => {
+const ContactMe = ({ them }) => {
   return (
-    <div className="relative">
-      <div className=" top-0 w-full  pt-12 min-h-screen h-fitContent flex items-center mt-20 mb-2 flex-col  absolute    bg-tertiaryLight justify-evenly">
-        <SectHeader sectionName={"About me"} />
+    <div className="relative" id="contact">
+      <div
+        className={` top-0 w-full  pt-12 min-h-screen h-fitContent flex items-center  pb-2 flex-col  absolute   ${
+          them ? "bg-tertiaryLight" : "bg-tertiaryDark"
+        }  justify-evenly`}
+      >
+        <SectHeader them={them} sectionName={"Contact me"} />
 
         <div className="flex justify-around flex-wrap w-full">
-          <ContactInfo />
+          <ContactInfo them={them} />
 
-          <ContactForm />
+          <ContactForm them={them} />
         </div>
       </div>
     </div>

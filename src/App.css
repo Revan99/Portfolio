@@ -1,7 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Poppins", sans-serif;
   height: 200vh;
 }
-.navbar {
-  border-bottom: 2px solid #f1f1f1;
+.light-nav {
+  border-bottom: 2px solid #afafaf;
+}
+.dark-nav {
+  border-bottom: 2px solid #646464;
 }

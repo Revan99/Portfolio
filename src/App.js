@@ -8,10 +8,10 @@ function App() {
   const [them, setThem] = useState(() => true);
   return (
     <div className="App">
-      <Navbar />
-      <Home></Home>
-      <ContactMe />
+      <Navbar them={them} />
       <Home them={them} setThem={setThem} />
+      <ContactMe them={them} />
+
       {/* <Skills them={them} /> */}
     </div>
   );
