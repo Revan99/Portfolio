@@ -51,7 +51,7 @@ const AboutMe = ({ them }) => {
             <button
               className={`rounded border-4 sm:mr-5 mr-0 font-bold border-primaryLights  border-primaryLight transition-all duration-150  w-40 hover:text-7thColorLight text-primaryLight bg-transparent py-2 hover:bg-primaryLight `}
             >
-              Projects
+              <a href="#projects">Projects</a>
             </button>
             <button
               className={`rounded border-4  font-bold border-primaryLights  border-primaryLight transition-all duration-150  w-40 hover:text-primaryDark text-7thColorLight bg-primaryLight py-2 hover:bg-transparent `}
