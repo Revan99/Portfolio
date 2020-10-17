@@ -5,7 +5,7 @@ import PersonalInfo from "./../personalInfo/PersonalInfo.json";
 const FollowMe = () => {
   return (
     <div className="mb-5">
-      <h3 className=" text-xl font-extrabold mt-5  text-6thColorLight">
+      <h3 className=" text-lg sm:text-xl font-extrabold mt-5  text-6thColorLight">
         Follow me
       </h3>
       <div className="flex mt-3 sm:justify-between justify-evenly">
