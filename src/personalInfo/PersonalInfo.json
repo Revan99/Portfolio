@@ -33,11 +33,15 @@
             "knowledge":70
         }
     ],
-  "email": "Hewr_s@outlook.com",
-  "PhoneNo": "0750-861-4371",
-  "location": "Ashty City - Erbil",
-  "github": "https://github.com/Hewr-Srood",
-  "linkedin": "https://www.linkedin.com/in/hewr-srood/",
-  "facebook": "https://www.facebook.com/hewr.dev.9",
-  "instagram": "https://instagram.com/hewrdev/"
+    "aboutMe":"I'm a software engineering student and also a junior front-end web developer. Learner and enthusiastic coder utilizing every opportunity to expand my arsenal.I also like robotic as a hobby I use to make alot of them using arduino.",
+    "email": "Hewr_s@outlook.com",
+    "PhoneNo": "0750-861-4371",
+    "location": "Ashty City - Erbil",
+    "github": "https://github.com/Hewr-Srood",
+    "linkedin": "https://www.linkedin.com/in/hewr-srood/",
+    "facebook": "https://www.facebook.com/hewr.dev.9",
+    "instagram": "https://instagram.com/hewrdev/",
+    "imageSources":{
+        "aboutImage":"./../images/aboutimage.png"
+    }
 }
