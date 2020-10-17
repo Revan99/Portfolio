@@ -1,9 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import Burger from "./Burger";
-
+import PersonalInfo from "./../../personalInfo/PersonalInfo.json";
 const Nav = styled.nav`
   .logo {
+    width: 25px;
+
     padding: 15px 0;
   }
 `;
@@ -29,7 +31,11 @@ const Navbar = ({ them }) => {
           : "bg-secondaryDark"
       }  z-50 h-16 w-full py-0 px-5 flex justify-between`}
     >
-      <div className="logo ">Nav Bar</div>
+      <div className="logo ">
+        <a href="#home">
+          <img src={PersonalInfo.navLogo} alt="" />
+        </a>
+      </div>
       <Burger them={them} />
     </Nav>
   );

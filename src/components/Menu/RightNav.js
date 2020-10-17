@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 const lists = [
   { name: "Home", url: "#home" },
+  { name: "About me", url: "#aboutme" },
   { name: "Skills", url: "#skills" },
   { name: "Projects", url: "#projects" },
   { name: "Contact", url: "#contact" },
@@ -28,7 +29,7 @@ const RightNav = ({ open, them }) => {
           key={`${list}-${i}`}
           className={`font-bold ${
             i === 0 ? "mt-20" : "mt-8"
-          } border-primaryLight  rounded cursor-pointer border-solid border-2 py-2 px-8 flex justify-center text-white`}
+          } border-primaryLight  rounded cursor-pointer border-solid border-2  flex justify-center text-white`}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, transition: { duration: 1 } }}
           whileHover={{
@@ -36,7 +37,9 @@ const RightNav = ({ open, them }) => {
             transition: { ease: "easeInOut" },
           }}
         >
-          <a href={list.url}>{list.name}</a>
+          <a className="h-full text-center w-full py-2 px-8" href={list.url}>
+            {list.name}
+          </a>
         </motion.li>
       ))}
     </Ul>

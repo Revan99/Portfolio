@@ -31,9 +31,10 @@ export default function ProjectModal({
       </div>
       <div>
         <div className="px-6  pb-2">
-          {techs.map((tech) => (
+          {techs.map((tech, i) => (
             <span
-              class={`inline-block ${
+              key={`${tech.pName}-${i}`}
+              className={`inline-block ${
                 them
                   ? " bg-7thColorLight text-5thColorLight"
                   : "   bg-tertiaryDark  text-4thColorDark"
@@ -46,9 +47,7 @@ export default function ProjectModal({
       </div>
       <div className="px-6 pt-4 pb-2 flex justify-end">
         <button
-          className={`rounded border-4  font-bold border-primaryLights  border-primaryLight transition-all duration-150  w-40 ${
-            them ? " hover:text-7thColorLight" : " hover:text-tertiaryDark"
-          } text-primaryLight bg-transparent py-2 hover:bg-primaryLight `}
+          className={`rounded border-4 sm:mr-5 mr-0 font-bold border-primaryLights  border-primaryLight transition-all duration-150  w-40 hover:text-7thColorLight text-primaryLight bg-transparent py-2 hover:bg-primaryLight `}
           type="button"
           style={{ transition: "all .15s ease" }}
           onClick={() => setShowModal(true)}
@@ -68,12 +67,9 @@ export default function ProjectModal({
                       className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
                       onClick={() => setShowModal(false)}
                     >
-                      <spa
-                        n
-                        className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none"
-                      >
+                      <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
                         ×
-                      </spa>
+                      </span>
                     </button>
                   </div>
                   {/*body*/}

@@ -17,8 +17,9 @@ const Projects = ({ them }) => {
         {" "}
         <SectHeader sectionName={"Projects"} them={them} />
         <div className="min-h-screen flex container justify-around items-start flex-wrap">
-          {projects.map((project) => (
+          {projects.map((project, i) => (
             <Modal
+              key={`${project.pName}-${i}`}
               them={them}
               pName={project.pName}
               pDesciption={project.pDesciption}

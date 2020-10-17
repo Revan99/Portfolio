@@ -6,6 +6,7 @@ import PersonalInfo from "./../personalInfo/PersonalInfo.json";
 export default function Home({ them, setThem }) {
   return (
     <div
+      id="home"
       className={`flex flex-col sm:flex-row items-center justify-between h-screen  xl:justify-around transition-all duration-150  ${
         them ? "bg-tertiaryLight" : "bg-tertiaryDark"
       }

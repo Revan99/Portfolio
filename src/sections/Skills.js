@@ -26,6 +26,7 @@ const defaultProps = {};
 const Skills = ({ them }) => {
   return (
     <div
+      id="skills"
       className={` min-h-screen flex flex-col items-center justify-center ${
         them
           ? " bg-tertiaryLight text-4thColorLight"
@@ -38,7 +39,10 @@ const Skills = ({ them }) => {
       <div className="grid grid-cols-1 md:grid-cols-2 h-1/2 w-4/5 justify-items-stretch ">
         {PersonalInfo.skills.map((element, index) => {
           return (
-            <div className="flex flex-col w-4/5 mt-5 mb-5 justify-self-center ">
+            <div
+              key={`${element.name}-${index}`}
+              className="flex flex-col w-4/5 mt-5 mb-5 justify-self-center "
+            >
               <div className="flex items-end mb-4">
                 <img src={element.logo} alt={element.name + " logo"} />
                 <h1>{element.name}</h1>

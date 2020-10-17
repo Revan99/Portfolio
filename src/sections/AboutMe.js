@@ -24,42 +24,41 @@ const defaultProps = {};
  *
  */
 const AboutMe = ({ them }) => {
-  console.log("====================================");
-  console.log(them);
-  console.log("====================================");
   return (
     <div
-      className={`min-h-screen flex flex-col md:flex-row justify-start items-center ${
-        them ? "bg-7thColorLight" : "bg-secondaryDark"
-      }`}
+      id="aboutme"
+      className={` top-0 w-full  pt-12 min-h-screen h-fitContent flex items-center  pb-2 flex-col ${
+        them ? "bg-4thColorDark" : "bg-secondaryDark"
+      }  justify-evenly`}
     >
-      <div className="flex  w-5/12 justify-center relative items-center mt-12 md:mt-0">
+      <SectHeader sectionName={"About Me"} them={them} />
+      <div className=" flex flex-wrap justify-between">
         <div>
-          <img src={PersonalInfo.imageSources.aboutImage} alt="circle" />
+          <div>
+            <img src={PersonalInfo.imageSources.aboutImage} alt="circle" />
+          </div>
+          <div className="flex justify-center items-center  absolute"></div>
         </div>
-        <div className="flex justify-center items-center mt-10 absolute">
-          <SectHeader sectionName={"AboutMe"} them={them} />
-        </div>
-      </div>
-      <div className="flex flex-col  w-7/12 justify-center items-start mt-12 md:mt-0">
-        <p
-          className={`${
-            them ? "text-6thColorLight" : "text-7thColorDark"
-          } pr-5`}
-        >
-          {PersonalInfo.aboutMe}
-        </p>
-        <div className="flex justify-between ">
-          <button
-            className={` mt-16 rounded mr-8 w-56 h-12 border-2 hover:bg-transparent hover:text-primaryDark border-primaryLight text-7thColorLight text-xl transition-all duration-150 bg-primaryDark `}
+        <div className="flex flex-col  sm:w-7/12 w-full justify-center items-center p-5  md:mt-0">
+          <p
+            className={`${
+              them ? "text-6thColorLight" : "text-7thColorDark"
+            } pr-5`}
           >
-            Projects
-          </button>
-          <button
-            className={`mt-16 rounded ml-8 w-56 h-12 border-2 hover:bg-primaryDark hover:text-7thColorLight border-primaryLight  text-primaryDark text-xl transition-all duration-150 bg-transparent`}
-          >
-            Download CV
-          </button>
+            {PersonalInfo.aboutMe}
+          </p>
+          <div className=" flex  sm:justify-start w-full mt-3 justify-between ">
+            <button
+              className={`rounded border-4 sm:mr-5 mr-0 font-bold border-primaryLights  border-primaryLight transition-all duration-150  w-40 hover:text-7thColorLight text-primaryLight bg-transparent py-2 hover:bg-primaryLight `}
+            >
+              Projects
+            </button>
+            <button
+              className={`rounded border-4  font-bold border-primaryLights  border-primaryLight transition-all duration-150  w-40 hover:text-primaryDark text-7thColorLight bg-primaryLight py-2 hover:bg-transparent `}
+            >
+              <a href={PersonalInfo.cv}>Download CV</a>
+            </button>
+          </div>
         </div>
       </div>
     </div>
