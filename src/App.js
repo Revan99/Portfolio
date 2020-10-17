@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Home from "./sections/Home";
-// import Skills from "./sections/Skills";
+import Skills from "./sections/Skills";
 import Project from "./sections/Projects";
 
 import Navbar from "./components/Menu/Navbar";
@@ -12,10 +12,9 @@ function App() {
     <div className="App">
       <Navbar them={them} />
       <Home them={them} setThem={setThem} />
+      <Skills them={them} />
       <Project them={them} />
       <ContactMe them={them} />
-
-      {/* <Skills them={them} /> */}
     </div>
   );
 }
