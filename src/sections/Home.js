@@ -12,7 +12,7 @@ export default function Home({ them, setThem }) {
       `}
     >
       <div
-        className={`h-5 bg-primaryLight w-10 rounded-full flex absolute mt-20 mr-20 top-0 right-0  `}
+        className={`h-5 bg-primaryLight w-10 rounded-full flex absolute mt-20 mr-8 top-0 right-0  `}
         onClick={() => {
           setThem((pThem) => !pThem);
         }}
@@ -23,7 +23,7 @@ export default function Home({ them, setThem }) {
           } ${them ? "ml-0" : "ml-5"}`}
         ></div>
       </div>
-      <div className="flex flex-col mt-16 sm:mt-0 h-1/2">
+      <div className="flex flex-col mt-16 sm:mt-0 h-1/2 ml-5 xl:ml-0">
         <h1
           className={`text-6xl ${
             them ? "text-4thColorLight" : "text-4thColorDark"
