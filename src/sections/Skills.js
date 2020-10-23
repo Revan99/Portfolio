@@ -1,71 +1,78 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import PersonalInfo from "./../personalInfo/PersonalInfo.json";
 import SectHeader from "./../components/SectHeader";
-// import PropTypes from 'prop-types';
+import { ThemeContext } from "./../Context/ThemeContext";
+import { motion } from "framer-motion";
+import CountUp from "react-countup";
 
-// #region constants
+const Skills = () => {
+  const [animate, setAnimate] = useState(false);
+  const { theme } = useContext(ThemeContext);
+  window.addEventListener("scroll", () => {
+    if (window.pageYOffset > 1528) {
+      console.log(window.pageYOffset);
+      console.log(animate);
+      setAnimate(true);
+    }
+  });
 
-// #endregion
-
-// #region styled-components
-
-// #endregion
-
-// #region functions
-
-// #endregion
-
-// #region component
-const propTypes = {};
-
-const defaultProps = {};
-
-/**
- *
- */
-const Skills = ({ them }) => {
   return (
     <div
       id="skills"
       className={` min-h-screen flex flex-col items-center justify-center ${
-        them
+        theme
           ? " bg-tertiaryLight text-4thColorLight"
           : "bg-tertiaryDark text-5thColorDark"
       }`}
     >
       <div className="flex ">
-        <SectHeader sectionName={"Skills"} them={them} />
+        <SectHeader sectionName={"Skills"} />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 h-1/2 w-4/5 justify-items-stretch ">
         {PersonalInfo.skills.map((element, index) => {
           return (
-            <div
-              key={`${element.name}-${index}`}
-              className="flex flex-col w-4/5 mt-5 mb-5 justify-self-center "
-            >
-              <div className="flex items-end mb-4">
-                <img src={element.logo} alt={element.name + " logo"} />
-                <h1>{element.name}</h1>
+            <>
+              <div
+                key={`${element.name}-${index}`}
+                className="flex flex-col w-4/5 mt-5 mb-5 justify-self-center "
+              >
+                <div className="flex items-end mb-4">
+                  <motion.img
+                    initial={{ rotate: 0 }}
+                    className="transition-all  ease-linear   duration-150 transform  "
+                    whileHover={{ rotate: [15, -15, 0] }}
+                    src={element.logo}
+                    alt={element.name + " logo"}
+                  />
+                </div>
+                <div className="flex h-8 items-center w-full bg-4thColorLight rounded">
+                  {animate && (
+                    <>
+                      <motion.div
+                        style={{ transition: ` all ease .8s` }}
+                        initial={{ width: "0px" }}
+                        animate={{ width: `${element.knowledge}%` }}
+                        className="flex ml-1 justify-center items-center bg-primaryDark rounded transition-all duration-150"
+                        key={index}
+                      >
+                        <h1 className="font-bold text-white">{element.name}</h1>
+                      </motion.div>
+                      <p
+                        className=" font-bold text-center text-white"
+                        style={{ width: `${100 - element.knowledge}%` }}
+                      >
+                        <CountUp start={0} end={element.knowledge} />%
+                      </p>
+                    </>
+                  )}
+                </div>
               </div>
-              <div className="flex h-12 w-full bg-4thColorLight rounded">
-                <div
-                  className="flex bg-primaryDark rounded transition-all duration-150"
-                  key={index}
-                  style={{
-                    width: `${element.knowledge}%`,
-                  }}
-                ></div>
-              </div>
-            </div>
+            </>
           );
         })}
       </div>
     </div>
   );
 };
-
-Skills.propTypes = propTypes;
-Skills.defaultProps = defaultProps;
-// #endregion
 
 export default Skills;

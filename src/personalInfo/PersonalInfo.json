@@ -8,32 +8,47 @@
   "skills": [
     {
       "name": "Java Script",
-      "logo": "/images/logos/JsLogo.png",
+      "logo": "https://img.icons8.com/dusk/64/000000/javascript-logo.png",
       "knowledge": 70
     },
     {
       "name": "HTML5",
-      "logo": "./../images/logos/HTMLLogo.png",
+      "logo": "https://img.icons8.com/dusk/64/000000/html-5.png",
       "knowledge": 75
     },
     {
       "name": "CSS",
-      "logo": "./../images/logos/CSSLogo.png",
+      "logo": "https://img.icons8.com/dusk/64/000000/css3.png",
+      "knowledge": 50
+    },
+    {
+      "name": "Bootstrap",
+      "logo": "https://img.icons8.com/color/64/000000/bootstrap.png",
       "knowledge": 50
     },
     {
       "name": "React",
-      "logo": "./../images/logos/ReactLogo.png",
+      "logo": "https://img.icons8.com/bubbles/90/000000/react.png",
       "knowledge": 55
     },
     {
       "name": "Java",
-      "logo": "./../images/logos/JavaLogo.png",
+      "logo": "https://img.icons8.com/color/90/000000/java-coffee-cup-logo.png",
       "knowledge": 65
     },
     {
-      "name": "C++",
-      "logo": "./../images/logos/C++Logo.png",
+      "name": "Adobe XD",
+      "logo": "https://img.icons8.com/cute-clipart/64/000000/adobe-xd.png",
+      "knowledge": 70
+    },
+    {
+      "name": "Mterial UI",
+      "logo": "https://img.icons8.com/color/48/000000/material-ui.png",
+      "knowledge": 70
+    },
+    {
+      "name": "tailwind",
+      "logo": "https://img.icons8.com/cute-clipart/64/000000/github.png",
       "knowledge": 70
     }
   ],

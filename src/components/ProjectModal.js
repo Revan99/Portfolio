@@ -1,4 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { ThemeContext } from "./../Context/ThemeContext";
+
+import styled from "styled-components";
 
 export default function ProjectModal({
   pName,
@@ -6,13 +9,25 @@ export default function ProjectModal({
   techs,
   github,
   demo,
-  them,
 }) {
+  const { theme } = useContext(ThemeContext);
   const [showModal, setShowModal] = useState(false);
+  const ModalContainer = styled.div`
+    transition: all ease 0.8s;
+    &:hover {
+      box-shadow: ${theme ? "rgba(0, 0, 0, 0.2)" : "rgba(255, 255, 255, 0.2)"} 4px 5px 25px 20px;
+    }
+  `;
+  const openModal = () => {
+    if (!showModal) {
+      setShowModal(!showModal);
+    }
+  };
   return (
-    <div
-      className={`max-w-sm rounded overflow-hidden shadow-xl m-5 p-5  ${
-        them ? "bg-tertiaryLight" : " bg-7thColorDark"
+    <ModalContainer
+      onClick={openModal}
+      className={`max-w-sm rounded cursor-pointer overflow-hidden shadow-xl m-5 p-5  ${
+        theme ? "bg-tertiaryLight" : " bg-7thColorDark"
       }`}
     >
       <img
@@ -22,7 +37,7 @@ export default function ProjectModal({
       />
       <div className="px-6 py-4">
         <div
-          className={`${them ? "text-5thColorLight" : "text-6thColorDark"}
+          className={`${theme ? "text-5thColorLight" : "text-6thColorDark"}
           font-extrabold text-xl mb-2`}
         >
           {" "}
@@ -35,7 +50,7 @@ export default function ProjectModal({
             <span
               key={`${tech.pName}-${i}`}
               className={`inline-block ${
-                them
+                theme
                   ? " bg-7thColorLight text-5thColorLight"
                   : "   bg-tertiaryDark  text-4thColorDark"
               } rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2`}
@@ -46,14 +61,6 @@ export default function ProjectModal({
         </div>
       </div>
       <div className="px-6 pt-4 pb-2 flex justify-end">
-        <button
-          className={`rounded border-4 sm:mr-5 mr-0 font-bold border-primaryLights  border-primaryLight transition-all duration-150  w-40 hover:text-7thColorLight text-primaryLight bg-transparent py-2 hover:bg-primaryLight `}
-          type="button"
-          style={{ transition: "all .15s ease" }}
-          onClick={() => setShowModal(true)}
-        >
-          Detail
-        </button>
         {showModal ? (
           <>
             <div className="justify-center items-center m-5 flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
@@ -104,6 +111,6 @@ export default function ProjectModal({
           </>
         ) : null}
       </div>
-    </div>
+    </ModalContainer>
   );
 }
