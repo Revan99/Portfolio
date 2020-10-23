@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
+import { ThemeContext } from "./../Context/ThemeContext";
+
 const AboutSecHeader = styled.div`
   &:hover div {
     width: 100%;
@@ -8,7 +10,9 @@ const AboutSecHeader = styled.div`
     transition: all ease 0.3s;
   }
 `;
-const SectHeader = ({ sectionName, them }) => {
+const SectHeader = ({ sectionName }) => {
+  const { theme } = useContext(ThemeContext);
+
   return (
     <AboutSecHeader
       AboutSecHeader
@@ -16,7 +20,7 @@ const SectHeader = ({ sectionName, them }) => {
     >
       <h1
         className={` text-5xl inline-block mr-auto  ${
-          them ? "text-4thColorLight" : "text-5thColorDark"
+          theme ? "text-4thColorLight" : "text-5thColorDark"
         }   font-extrabold`}
       >
         {sectionName}
